@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jump = 1.5f;
 
 
-    private Transform transform;
+    private Transform position;
     private Rigidbody2D rigidBody;
     
     private bool isJumping;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform  = gameObject.GetComponent<Transform>();
+        position  = gameObject.GetComponent<Transform>();
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -69,12 +69,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            position.position += Vector3.left * speed * Time.deltaTime;
             //isJumping = false;
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            position.position += Vector3.right * speed * Time.deltaTime;
         }
 
     }
