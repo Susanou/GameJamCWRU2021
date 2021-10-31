@@ -7,13 +7,14 @@ public class PlayerController : MonoBehaviour
 
     public Transform feet;
     public LayerMask groundLayer; // Should allways be "Ground". Select from inspector
+    public Signal timeSapce;
     public float jumpTime; // So that player can jump higher the longer he presses SPACE
     private float jumpTimeCounter; // variable to count the jump time above
 
     [SerializeField] private float speed = 25f;
     [SerializeField] private float jump = 1.5f;
 
-
+    [HideInInspector] public static PlayerController instance;
     private Transform position;
     private Rigidbody2D rigidBody;
     
@@ -21,17 +22,38 @@ public class PlayerController : MonoBehaviour
     private bool onGround;
     private float groundCheckRadius = 0.3f;
 
+
+    void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }else if(instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
         position  = gameObject.GetComponent<Transform>();
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
+
+        //DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            timeSapce.Raise();
+        }
     }
 
     private void PlayerMovement(){

@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public int sceneIndex;    
-    Animator animator;    
+    Animator animator;   
+
+    private GameObject player; 
     void Start()
     {
         animator = transform.GetComponent<Animator>();
@@ -13,15 +15,17 @@ public class ChangeScene : MonoBehaviour
     
     void Update()
     {
-        //change scene when user presses Space key
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(LoadSceneAFterTransition());
-        }
+
     }    
     
-    private IEnumerator LoadSceneAFterTransition()
+    public void changeScene(){
+        StartCoroutine(LoadSceneAfterTransition());
+    }
+
+    private IEnumerator LoadSceneAfterTransition()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        //DontDestroyOnLoad(player);
         //show animate out animation
         animator.SetBool("animateOut", true);
         yield return new WaitForSeconds(1f);        //load the scene we want
