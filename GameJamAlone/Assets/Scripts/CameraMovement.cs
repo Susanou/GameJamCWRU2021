@@ -13,6 +13,13 @@ public class CameraMovement : MonoBehaviour
     [Range(0,1)]
     public float moveCameraTrigger;
 
+    void  Awake()
+    {
+        if (target == null){
+            target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()

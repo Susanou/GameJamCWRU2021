@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06789c80569304519a505acc04784592, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b773ad9b59628974393d1ba8c843259c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  timeSapce: {fileID: 11400000, guid: 56ab86c82456ee94687303988af08d1a, type: 2}
+  timeSapce: {fileID: 11400000, guid: 753c989785adf11419216d21a10f8c07, type: 2}
   jumpTime: 0.5
   speed: 10
   jump: 2

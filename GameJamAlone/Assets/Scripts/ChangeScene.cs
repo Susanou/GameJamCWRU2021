@@ -24,9 +24,11 @@ public class ChangeScene : MonoBehaviour
 
     private IEnumerator LoadSceneAfterTransition()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+
+        //player = GameObject.FindGameObjectWithTag("Player");
         //DontDestroyOnLoad(player);
         //show animate out animation
+        Debug.Log("this has been called");
         animator.SetBool("animateOut", true);
         yield return new WaitForSeconds(1f);        //load the scene we want
         SceneManager.LoadScene(sceneIndex);
