@@ -47935,7 +47935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: This is a hint pop up
-  c: {r: 1, g: 1, b: 1, a: 0}
+  c: {r: 1, g: 0, b: 0.68167496, a: 0}
 --- !u!1 &1605562800
 GameObject:
   m_ObjectHideFlags: 0
