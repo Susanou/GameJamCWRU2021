@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5af349579dd094da5f1624459adbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 1
+  sceneName: Sandbox
 --- !u!95 &1357988916
 Animator:
   serializedVersion: 3

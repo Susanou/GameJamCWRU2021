@@ -4,13 +4,19 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public int sceneIndex;    
+    public string sceneName;    
     Animator animator;   
 
     private GameObject player; 
-    void Start()
+
+    void Awake()
     {
         animator = transform.GetComponent<Animator>();
+    }
+
+    void Start()
+    {
+        
     }    
     
     void Update()
@@ -19,6 +25,7 @@ public class ChangeScene : MonoBehaviour
     }    
     
     public void changeScene(){
+        Debug.Log("this function was called");
         StartCoroutine(LoadSceneAfterTransition());
     }
 
@@ -31,6 +38,6 @@ public class ChangeScene : MonoBehaviour
         Debug.Log("this has been called");
         animator.SetBool("animateOut", true);
         yield return new WaitForSeconds(1f);        //load the scene we want
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(sceneName);
     }
 }
