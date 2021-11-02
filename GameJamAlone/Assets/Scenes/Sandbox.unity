@@ -16415,7 +16415,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1095073640}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 144e5172c63ac320c82a4d36d60f5a6b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -16556,10 +16556,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1695565536647666085, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4047633698553574149, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: m_Name
       value: Player
@@ -16607,34 +16603,6 @@ PrefabInstance:
     - target: {fileID: 4047633698553574151, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047633698553574152, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_Size.x
-      value: 0.22538115
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047633698553574152, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0269484
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047633698553574153, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047633698553574153, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 22a8e0db45fcec744af6ce9d04b99c68, type: 2}
-    - target: {fileID: 4047633698553574153, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047633698553574153, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047633698553574154, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
-      propertyPath: speed
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4047633698553574154, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: distance
