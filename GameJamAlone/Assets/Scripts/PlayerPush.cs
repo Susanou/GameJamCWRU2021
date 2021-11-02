@@ -10,10 +10,12 @@ public class PlayerPush : MonoBehaviour
     public LayerMask boxMask;
 
     GameObject box;
+
+    private bool isPushing;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isPushing = false;
     }
 
     // Update is called once per frame
@@ -24,18 +26,21 @@ public class PlayerPush : MonoBehaviour
 
         Debug.Log(hit.collider);
 
-        if (hit.collider != null && hit.collider.gameObject.tag == "Pushable" && Input.GetKeyDown(KeyCode.E)){
+        if (hit.collider != null && hit.collider.gameObject.tag == "Pushable" && Input.GetKeyDown(KeyCode.E) && !isPushing){
             box = hit.collider.gameObject;
 
-            box.GetComponent<DistanceJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
-            box.GetComponent<DistanceJoint2D>().enabled = true;
+            isPushing = true;
+
+            box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
+            box.GetComponent<FixedJoint2D>().enabled = true;
             //box.GetComponent<FixedJoint2D>().autoConfigureConnectedAnchor = false;
             Debug.Log("I'm here");
         }
-        else if (Input.GetKeyUp(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E) && isPushing)
         {
-            box.GetComponent<DistanceJoint2D>().autoConfigureConnectedAnchor = true;
-            box.GetComponent<DistanceJoint2D> ().enabled = false;
+            //box.GetComponent<DistanceJoint2D>().autoConfigureConnectedAnchor = true;
+            box.GetComponent<FixedJoint2D> ().enabled = false;
+            isPushing = false;
         }
     }
 
