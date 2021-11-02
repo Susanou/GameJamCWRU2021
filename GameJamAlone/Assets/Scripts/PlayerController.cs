@@ -92,14 +92,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             isMoving = -1;
-            position.position += Vector3.left * speed * Time.deltaTime;
             if (position.localScale.x > 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face left when moving left
             //isJumping = false;
         }
         else if(Input.GetKey(KeyCode.D))
         {
             isMoving = 1;
-            position.position += Vector3.right * speed * Time.deltaTime;
             if (position.localScale.x < 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face right when moving right
         }
         else
@@ -107,6 +105,12 @@ public class PlayerController : MonoBehaviour
             isMoving = 0;
         }
 
+    }
+
+    private void FixedUpdate() {
+        float mH = Input.GetAxis("Horizontal");
+        
+        rigidBody.velocity = new Vector2(mH*speed, rigidBody.velocity.y);
     }
 
     //Prevision of furture movement
