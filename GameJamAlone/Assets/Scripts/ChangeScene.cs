@@ -25,7 +25,7 @@ public class ChangeScene : MonoBehaviour
     }    
     
     public void changeScene(){
-        Debug.Log("this function was called");
+        //Debug.Log("this function was called");
         StartCoroutine(LoadSceneAfterTransition());
     }
 
@@ -35,7 +35,7 @@ public class ChangeScene : MonoBehaviour
         //player = GameObject.FindGameObjectWithTag("Player");
         //DontDestroyOnLoad(player);
         //show animate out animation
-        Debug.Log("this has been called");
+        //Debug.Log("this has been called");
         animator.SetBool("animateOut", true);
         yield return new WaitForSeconds(1f);        //load the scene we want
         SceneManager.LoadScene(sceneName);

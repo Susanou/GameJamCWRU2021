@@ -17,6 +17,8 @@ public class BooleanValue : ScriptableObject, ISerializationCallbackReceiver
     }
 
     public void OnBeforeSerialize()
-    {}
+    {
+        
+    }
 
 }
