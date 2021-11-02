@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public static PlayerController instance;
     private Transform position;
     private Rigidbody2D rigidBody;
+    private Animator animator;
     
     private bool isJumping;
     private int isMoving; // -1 Left, 0 for not moving, 1 Right
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         position  = gameObject.GetComponent<Transform>();
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
-
+        animator = gameObject.GetComponent<Animator>();
         //DontDestroyOnLoad(this);
     }
 
@@ -111,6 +112,8 @@ public class PlayerController : MonoBehaviour
         float mH = Input.GetAxis("Horizontal");
         
         rigidBody.velocity = new Vector2(mH*speed, rigidBody.velocity.y);
+        if (mH != 0) animator.SetBool("isPlayerMoving",true);
+        else animator.SetBool("isPlayerMoving",false);
     }
 
     //Prevision of furture movement
@@ -126,4 +129,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public int getIsMoving() {
+        return(isMoving);
+    }
 }
