@@ -31,8 +31,8 @@ public class PlayerPush : MonoBehaviour
             box.GetComponent<DistanceJoint2D>().enabled = true;
             //box.GetComponent<FixedJoint2D>().autoConfigureConnectedAnchor = false;
             Debug.Log("I'm here");
-
-        }else if (Input.GetKeyUp(KeyCode.E))
+        }
+        else if (Input.GetKeyUp(KeyCode.E))
         {
             box.GetComponent<DistanceJoint2D>().autoConfigureConnectedAnchor = true;
             box.GetComponent<DistanceJoint2D> ().enabled = false;

@@ -401,7 +401,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 7435a7152cc2a8e4490b3fdcb1b70202, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &258826907
 SpriteRenderer:
@@ -16434,7 +16434,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719806255}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44ffd2972b2169641a47bf8ea2b5833c, type: 3}
   m_Name: 
@@ -16556,6 +16556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1695565536647666085, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4047633698553574149, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: m_Name
       value: Player

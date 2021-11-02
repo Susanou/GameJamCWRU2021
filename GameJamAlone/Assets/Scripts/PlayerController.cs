@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody;
     
     private bool isJumping;
+    private int isMoving; // -1 Left, 0 for not moving, 1 Right
     private bool onGround;
     private float groundCheckRadius = 0.3f;
 
@@ -90,14 +91,20 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
+            isMoving = -1;
             position.position += Vector3.left * speed * Time.deltaTime;
             if (position.localScale.x > 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face left when moving left
             //isJumping = false;
         }
         else if(Input.GetKey(KeyCode.D))
         {
+            isMoving = 1;
             position.position += Vector3.right * speed * Time.deltaTime;
             if (position.localScale.x < 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face right when moving right
+        }
+        else
+        {
+            isMoving = 0;
         }
 
     }
@@ -109,8 +116,10 @@ public class PlayerController : MonoBehaviour
         {
             Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>(), true);
         }
+        else if(collision.collider.tag == "Pushable" && (collision.GetContact(0).normal.x*isMoving) < 0)
+        {
+            collision.collider.attachedRigidbody.position += new Vector2(Mathf.Sign(position.localScale.x) * speed * Time.deltaTime, 0);
+        }
     }
-
-
 
 }
