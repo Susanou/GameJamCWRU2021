@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 013548c7210ab4a079355b03ec7ce08c
+guid: 088a3f4d9f2a74fd7abcaa791f65904e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5190870003881045076
-    second: walk cycle half-Sheet_0
+      213: -9111163046137378690
+    second: walk cycle half_0
   - first:
-      213: 7031430485711925011
-    second: walk cycle half-Sheet_1
+      213: -722838898752171378
+    second: walk cycle half_1
   - first:
-      213: -6901774013798261871
-    second: walk cycle half-Sheet_2
+      213: 2762994374725473099
+    second: walk cycle half_2
   - first:
-      213: -8722672557230739896
-    second: walk cycle half-Sheet_3
+      213: -2333150500519901265
+    second: walk cycle half_3
   - first:
-      213: 8085942108882816372
-    second: walk cycle half-Sheet_4
+      213: 178135481347837282
+    second: walk cycle half_4
   - first:
-      213: 1363940733350894947
-    second: walk cycle half-Sheet_5
+      213: -2978570204992020260
+    second: walk cycle half_5
   - first:
-      213: -1980604925418324341
-    second: walk cycle half-Sheet_6
+      213: 1141445016216815400
+    second: walk cycle half_6
   - first:
-      213: -7289229344896003752
-    second: walk cycle half-Sheet_7
+      213: -550780740997473718
+    second: walk cycle half_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +116,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk cycle half-Sheet_0
+      name: walk cycle half_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,41 +135,41 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca3907fdb3356f7b0800000000000000
-      internalID: -5190870003881045076
+      spriteID: e78c0588b75ae8180800000000000000
+      internalID: -9111163046137378690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_1
+      name: walk cycle half_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 0
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31f26bbc5c8a49160800000000000000
-      internalID: 7031430485711925011
+      spriteID: e82da02f9d5f7f5f0800000000000000
+      internalID: -722838898752171378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_2
+      name: walk cycle half_2
       rect:
         serializedVersion: 2
         x: 96
@@ -177,20 +177,20 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b58830a19f730a0800000000000000
-      internalID: -6901774013798261871
+      spriteID: b431aedaeb0285620800000000000000
+      internalID: 2762994374725473099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_3
+      name: walk cycle half_3
       rect:
         serializedVersion: 2
         x: 144
@@ -198,41 +198,41 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ea63e1687d2f680800000000000000
-      internalID: -8722672557230739896
+      spriteID: fa78cf83bfbfe9fd0800000000000000
+      internalID: -2333150500519901265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_4
+      name: walk cycle half_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 193
         y: 0
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47d4552c189073070800000000000000
-      internalID: 8085942108882816372
+      spriteID: 26d81a7c64dd87200800000000000000
+      internalID: 178135481347837282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_5
+      name: walk cycle half_5
       rect:
         serializedVersion: 2
         x: 240
@@ -240,41 +240,41 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36dd01aded0bde210800000000000000
-      internalID: 1363940733350894947
+      spriteID: cd063e00e2ef9a6d0800000000000000
+      internalID: -2978570204992020260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_6
+      name: walk cycle half_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 289
         y: 0
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8e3d04605a7384e0800000000000000
-      internalID: -1980604925418324341
+      spriteID: 8274e32d13a37df00800000000000000
+      internalID: 1141445016216815400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk cycle half-Sheet_7
+      name: walk cycle half_7
       rect:
         serializedVersion: 2
         x: 336
@@ -282,14 +282,14 @@ TextureImporter:
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 851de13e78477da90800000000000000
-      internalID: -7289229344896003752
+      spriteID: a4a18bf85db3b58f0800000000000000
+      internalID: -550780740997473718
       vertices: []
       indices: 
       edges: []

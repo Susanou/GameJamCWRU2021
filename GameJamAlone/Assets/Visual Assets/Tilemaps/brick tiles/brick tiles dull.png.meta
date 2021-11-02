@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: 86374fa405e044c328e854e605fdd965
+guid: 3ecb199d6d8ee4591b74fa668587a285
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4889174491964305524
-    second: roof tiles tan dull_0
+      213: -61594183437082490
+    second: brick tiles dull_0
   - first:
-      213: -256824048117164108
-    second: roof tiles tan dull_1
+      213: 7736918017661915111
+    second: brick tiles dull_1
   - first:
-      213: 7781039786140491307
-    second: roof tiles tan dull_2
+      213: -7291272075716733259
+    second: brick tiles dull_2
   - first:
-      213: -391523753346188329
-    second: roof tiles tan dull_3
+      213: 1879443115705948688
+    second: brick tiles dull_3
   - first:
-      213: 1741699896672517808
-    second: roof tiles tan dull_4
+      213: 445851559400066916
+    second: brick tiles dull_4
   - first:
-      213: 1161799838481758969
-    second: roof tiles tan dull_5
-  - first:
-      213: -3054322252113259433
-    second: roof tiles tan dull_6
-  - first:
-      213: 6348389510101067107
-    second: roof tiles tan dull_7
-  - first:
-      213: -5030218591254388368
-    second: roof tiles tan dull_8
-  - first:
-      213: 4831753887144542278
-    second: roof tiles tan dull_9
+      213: -9063963741412187903
+    second: brick tiles dull_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +60,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -133,91 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roof tiles tan dull_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8f019914b9262cb0800000000000000
-      internalID: -4889174491964305524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roof tiles tan dull_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b7d23293e39f6cf0800000000000000
-      internalID: -256824048117164108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roof tiles tan dull_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2ed514b57ecbfb60800000000000000
-      internalID: 7781039786140491307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roof tiles tan dull_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7db3ca08837019af0800000000000000
-      internalID: -391523753346188329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roof tiles tan dull_4
+      name: brick tiles dull_0
       rect:
         serializedVersion: 2
         x: 0
@@ -225,20 +129,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0beff7ef3d2cb2810800000000000000
-      internalID: 1741699896672517808
+      spriteID: 680a000aa6c252ff0800000000000000
+      internalID: -61594183437082490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roof tiles tan dull_5
+      name: brick tiles dull_1
       rect:
         serializedVersion: 2
         x: 32
@@ -246,20 +150,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fabfc03cca8f1010800000000000000
-      internalID: 1161799838481758969
+      spriteID: 7efce03f1fd0f5b60800000000000000
+      internalID: 7736918017661915111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roof tiles tan dull_6
+      name: brick tiles dull_2
       rect:
         serializedVersion: 2
         x: 64
@@ -267,20 +171,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 754d73d181edc95d0800000000000000
-      internalID: -3054322252113259433
+      spriteID: 5b6dd2e8da230da90800000000000000
+      internalID: -7291272075716733259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roof tiles tan dull_7
+      name: brick tiles dull_3
       rect:
         serializedVersion: 2
         x: 0
@@ -288,20 +192,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365e36dcf920a1850800000000000000
-      internalID: 6348389510101067107
+      spriteID: 01ad4375e8f151a10800000000000000
+      internalID: 1879443115705948688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roof tiles tan dull_8
+      name: brick tiles dull_4
       rect:
         serializedVersion: 2
         x: 32
@@ -309,20 +213,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07167bda7d2113ab0800000000000000
-      internalID: -5030218591254388368
+      spriteID: 46f489c81abff2600800000000000000
+      internalID: 445851559400066916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roof tiles tan dull_9
+      name: brick tiles dull_5
       rect:
         serializedVersion: 2
         x: 64
@@ -330,14 +234,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6400d558f86dd0340800000000000000
-      internalID: 4831753887144542278
+      spriteID: 1012b180005563280800000000000000
+      internalID: -9063963741412187903
       vertices: []
       indices: 
       edges: []

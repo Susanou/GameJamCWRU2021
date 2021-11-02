@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     private bool onGround;
     private float groundCheckRadius = 0.3f;
 
-
     void Awake()
     {
         if(instance == null)
@@ -92,11 +91,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             position.position += Vector3.left * speed * Time.deltaTime;
+            if (position.localScale.x > 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face left when moving left
             //isJumping = false;
         }
         else if(Input.GetKey(KeyCode.D))
         {
             position.position += Vector3.right * speed * Time.deltaTime;
+            if (position.localScale.x < 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face right when moving right
         }
 
     }

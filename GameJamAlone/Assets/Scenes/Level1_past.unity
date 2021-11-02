@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1695565536647666085, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4047633698553574149, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: m_Name
       value: Player
@@ -422,6 +426,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1931870545442575806, guid: 3e146e17b5fe23c4ab97313681bebc07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931870547330582422, guid: 3e146e17b5fe23c4ab97313681bebc07, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931870547330582422, guid: 3e146e17b5fe23c4ab97313681bebc07, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
