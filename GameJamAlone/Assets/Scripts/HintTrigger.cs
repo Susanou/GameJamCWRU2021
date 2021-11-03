@@ -10,6 +10,7 @@ public class HintTrigger : MonoBehaviour
     private GameObject popUp;
 
     void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log(other);
         popUp = GameManager.FloatingTextBubble(other.transform.position, text, c);
     }
 
