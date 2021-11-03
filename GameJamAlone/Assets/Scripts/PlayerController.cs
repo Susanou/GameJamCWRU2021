@@ -95,14 +95,17 @@ public class PlayerController : MonoBehaviour
             isMoving = -1;
             if (position.localScale.x > 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face left when moving left
             //isJumping = false;
+            animator.SetBool("isPlayerMoving",true);
         }
         else if(Input.GetKey(KeyCode.D))
         {
             isMoving = 1;
             if (position.localScale.x < 0) position.localScale = new Vector3(position.localScale.x*-1,position.localScale.y,position.localScale.z); //Flips sprite to face right when moving right
+            animator.SetBool("isPlayerMoving",true);
         }
         else
         {
+            animator.SetBool("isPlayerMoving",false);
             isMoving = 0;
         }
 
@@ -112,8 +115,6 @@ public class PlayerController : MonoBehaviour
         float mH = Input.GetAxis("Horizontal");
         
         rigidBody.velocity = new Vector2(mH*speed, rigidBody.velocity.y);
-        if (mH != 0) animator.SetBool("isPlayerMoving",true);
-        else animator.SetBool("isPlayerMoving",false);
     }
 
     //Prevision of furture movement
