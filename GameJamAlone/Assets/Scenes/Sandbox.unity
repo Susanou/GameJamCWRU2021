@@ -5364,6 +5364,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3974205802789746273, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
+      propertyPath: index
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974205802789746273, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
+      propertyPath: position
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491522, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_Name
       value: Push box
@@ -5374,11 +5382,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.809349
+      value: 6.77
       objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.41909897
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23706,7 +23714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4047633698553574151, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4047633698553574151, guid: 7fa0197e3f8de814f9c6ee43f8d06c33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23761,25 +23769,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3974205802789746273, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
-      propertyPath: index
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608679809180491521, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491522, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
-    - target: {fileID: 7608679809180491522, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_LocalPosition.x

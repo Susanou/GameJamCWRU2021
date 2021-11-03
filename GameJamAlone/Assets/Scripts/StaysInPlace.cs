@@ -7,9 +7,11 @@ public class StaysInPlace : MonoBehaviour
     [HideInInspector] public static StaysInPlace[] instances = new StaysInPlace[10];
     [SerializeField] public int index;
 
+    public PositionValue position;
+
     void Awake()
     {
-        if(instances[index] == null)
+/*         if(instances[index] == null)
         {
             instances[index] = this;
             DontDestroyOnLoad(gameObject);
@@ -17,7 +19,9 @@ public class StaysInPlace : MonoBehaviour
         else if(instances[index] != this)
         {
             Destroy(gameObject);
-        }
+        } */
+
+        gameObject.transform.position = position.RuntimeValue;
     }
     
     // Start is called before the first frame update
@@ -29,6 +33,6 @@ public class StaysInPlace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        position.RuntimeValue = this.transform.position;
     }
 }
