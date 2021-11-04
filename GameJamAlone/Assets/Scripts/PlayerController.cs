@@ -120,9 +120,10 @@ public class PlayerController : MonoBehaviour
     //Prevision of furture movement
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.collider.tag == "FallThrough" && (Input.GetKey(KeyCode.S)))
+        if (collision.collider.tag == "FallThrough" && ((Input.GetKey(KeyCode.S))||(Input.GetKey(KeyCode.Space))))
         {
             Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>(), true);
+            StartCoroutine(ReenableCollision(collision.collider,0.6f));
         }
         else if(collision.collider.tag == "Pushable" && (collision.GetContact(0).normal.x*isMoving) < 0)
         {
@@ -130,4 +131,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private IEnumerator ReenableCollision(Collider2D collidesWith, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Physics2D.IgnoreCollision(collidesWith, GetComponent<Collider2D>(), false);
+    }
 }
