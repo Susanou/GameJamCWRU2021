@@ -240,13 +240,17 @@ PrefabInstance:
       propertyPath: position
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3974205802789746273, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491522, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_Name
       value: Push box
       objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7608679809180491527, guid: 824e54f2d62919533b9faa7aed4c0f59, type: 3}
       propertyPath: m_LocalPosition.x

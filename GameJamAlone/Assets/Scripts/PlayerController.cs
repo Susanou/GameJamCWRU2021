@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private Transform position;
     private Rigidbody2D rigidBody;
     private Animator animator;
-    
+
     private bool isJumping;
     private int isMoving; // -1 Left, 0 for not moving, 1 Right
     private bool onGround;
@@ -130,7 +130,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public int getIsMoving() {
-        return(isMoving);
-    }
 }
