@@ -18,11 +18,13 @@ public class PlayerController : MonoBehaviour
     private Transform position;
     private Rigidbody2D rigidBody;
     private Animator animator;
+    private SpriteRenderer sprite;
 
     private bool isJumping;
     private int isMoving; // -1 Left, 0 for not moving, 1 Right
     private bool onGround;
     private float groundCheckRadius = 0.3f;
+    public bool ghostEffect = false;
 
     void Awake()
     {
@@ -43,6 +45,7 @@ public class PlayerController : MonoBehaviour
         position  = gameObject.GetComponent<Transform>();
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+        sprite = gameObject.GetComponent<SpriteRenderer>();
         //DontDestroyOnLoad(this);
     }
 
@@ -54,6 +57,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             timeSapce.Raise();
+            SwapColor();
         }
     }
 
@@ -139,5 +143,13 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Physics2D.IgnoreCollision(collidesWith, GetComponent<Collider2D>(), false);
+    }
+
+    private void SwapColor()
+    {
+        Debug.Log("Swap color?");
+        sprite.color = ghostEffect ? new Color(1,1,1,1) : new Color(0.35f,0.39f,0.41f,0.46f);
+        ghostEffect = !ghostEffect;
+        Debug.Log(ghostEffect);
     }
 }
