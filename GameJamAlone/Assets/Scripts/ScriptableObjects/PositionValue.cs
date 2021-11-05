@@ -7,7 +7,6 @@ public class PositionValue : ScriptableObject, ISerializationCallbackReceiver
 {
     public Vector2 initialValue; //Value of the object (Stays the same throught the game)
 
-    [HideInInspector]
     public Vector2 RuntimeValue; //Value used during the game
 
     public void OnAfterDeserialize()
