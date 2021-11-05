@@ -11,7 +11,8 @@ public class HintTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
         Debug.Log(other);
-        popUp = GameManager.FloatingTextBubble(other.transform.position, text, c);
+        if(other.gameObject.tag == "Player")
+            popUp = GameManager.FloatingTextBubble(other.transform.position, text, c);
     }
 
     void OnTriggerExit2D(Collider2D other) {
