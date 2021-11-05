@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space)) && onGround)
         {
             isJumping = true;
-
+            animator.SetInteger("isJumping",1);
             jumpTimeCounter = jumpTime;
             rigidBody.velocity = Vector2.up * jump;
         }
@@ -82,8 +82,12 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                animator.SetInteger("isJumping",-1);
                 isJumping = false;
             }
+        }
+        else if (onGround) {
+            animator.SetInteger("isJumping",0);
         }
 
         if (Input.GetKeyUp(KeyCode.Space)){

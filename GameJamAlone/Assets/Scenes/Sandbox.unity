@@ -22938,7 +22938,7 @@ GameObject:
   - component: {fileID: 1583181443}
   - component: {fileID: 1583181447}
   - component: {fileID: 1583181448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Erodable
   m_TagString: Untagged
   m_Icon: {fileID: 0}

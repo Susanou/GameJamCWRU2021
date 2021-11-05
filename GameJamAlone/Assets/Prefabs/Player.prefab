@@ -155,7 +155,7 @@ MonoBehaviour:
   feet: {fileID: 4047633697939245634}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   timeSapce: {fileID: 11400000, guid: 56ab86c82456ee94687303988af08d1a, type: 2}
   jumpTime: 0.5
   speed: 2
