@@ -26,7 +26,7 @@ public class StartMenu : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("Level1_present"); // 1 should be the number of the castle scene
+        SceneManager.LoadScene("Level1_present_resized"); // 1 should be the number of the castle scene
         Time.timeScale = 1f;
         MenuMusic.SetActive(false);
     }
