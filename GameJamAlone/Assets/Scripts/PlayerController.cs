@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public Signal timeSapce;
     public float jumpTime; // So that player can jump higher the longer he presses SPACE
     private float jumpTimeCounter; // variable to count the jump time above
+    
+    public AudioSource gameMusic;
 
     [SerializeField] private float speed = 25f;
     [SerializeField] private float jump = 1.5f;
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         sprite = gameObject.GetComponent<SpriteRenderer>();
+        gameMusic = gameObject.GetComponent<AudioSource>();
         //DontDestroyOnLoad(this);
     }
 
@@ -165,6 +168,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Swap color?");
         sprite.color = ghostEffect ? new Color(1,1,1,1) : new Color(0.35f,0.39f,0.41f,0.46f);
+        gameMusic.volume = ghostEffect ? 0.4f : 0.1f;
         ghostEffect = !ghostEffect;
         Debug.Log(ghostEffect);
     }

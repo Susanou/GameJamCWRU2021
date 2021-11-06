@@ -33,7 +33,7 @@ public class StartMenu : MonoBehaviour
 
     public void credits()
     {
-        SceneManager.LoadScene("credits");
+        SceneManager.LoadScene("Credits");
         MenuMusic.SetActive(false);
     }
 
