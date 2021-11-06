@@ -133,6 +133,7 @@ public class PlayerController : MonoBehaviour
     //Prevision of furture movement
     void OnCollisionStay2D(Collision2D collision)
     {
+        //Debug.Log(collision);
         if (collision.collider.tag == "FallThrough" && ((Input.GetKey(KeyCode.S))||(Input.GetKey(KeyCode.Space))))
         {
             Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>(), true);
@@ -152,9 +153,9 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider){
 
-        if(collider.tag == "end"){
+        if(collider.tag == "End"){
+            animator.SetTrigger("IsEnd");
             isEnd = true;
-            animator.SetBool("IsEnd", true);
         }
 
     }

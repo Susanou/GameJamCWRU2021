@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1_present_resized.unity
     guid: 923b67254229b4f4dab83c9091477aad
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: e7223b0e1f7a9574c9c8cb88ea9bcefe
   m_configObjects: {}
