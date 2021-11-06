@@ -54,4 +54,8 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene("Sandbox");
         MenuMusic.SetActive(false);
     }
+
+    private void EndScene(){
+        SceneManager.LoadScene("End Scene");
+    }
 }

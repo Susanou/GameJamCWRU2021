@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider){
 
         if(collider.tag == "End"){
-            collider.GetComponent<Animator>().SetBool("IsEnd",true);
+            collider.GetComponent<Animator>().SetTrigger("IsEnd");
             sprite.enabled = false;
             isEnd = true;
         }
@@ -167,9 +167,5 @@ public class PlayerController : MonoBehaviour
         sprite.color = ghostEffect ? new Color(1,1,1,1) : new Color(0.35f,0.39f,0.41f,0.46f);
         ghostEffect = !ghostEffect;
         Debug.Log(ghostEffect);
-    }
-
-    private void EndScene(){
-        SceneManager.LoadScene("End Scene");
     }
 }
