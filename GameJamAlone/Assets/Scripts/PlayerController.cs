@@ -154,7 +154,8 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider){
 
         if(collider.tag == "End"){
-            animator.SetTrigger("IsEnd");
+            collider.GetComponent<Animator>().SetBool("IsEnd",true);
+            sprite.enabled = false;
             isEnd = true;
         }
 
