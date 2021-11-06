@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
     private bool onGround;
     private float groundCheckRadius = 0.3f;
     public bool ghostEffect = false;
+
+    private bool isEnd = false;
 
     void Awake()
     {
@@ -52,12 +55,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
+        if (!isEnd){
+            PlayerMovement();
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            timeSapce.Raise();
-            SwapColor();
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                timeSapce.Raise();
+                SwapColor();
+            }
         }
     }
 
@@ -145,11 +150,24 @@ public class PlayerController : MonoBehaviour
         Physics2D.IgnoreCollision(collidesWith, GetComponent<Collider2D>(), false);
     }
 
+    void OnTriggerEnter2D(Collider2D collider){
+
+        if(collider.tag == "end"){
+            isEnd = true;
+            animator.SetBool("IsEnd", true);
+        }
+
+    }
+
     private void SwapColor()
     {
         Debug.Log("Swap color?");
         sprite.color = ghostEffect ? new Color(1,1,1,1) : new Color(0.35f,0.39f,0.41f,0.46f);
         ghostEffect = !ghostEffect;
         Debug.Log(ghostEffect);
+    }
+
+    private void EndScene(){
+        SceneManager.LoadScene("End Scene");
     }
 }
