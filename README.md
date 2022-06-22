@@ -1,6 +1,6 @@
 # GameJamCWRU2021
 
-## The Prince Lost In Time
+## [The Prince Lost In Time](https://fukurou99.itch.io/the-prince-lost-in-time)
 
 Help this prince find his way home. 
 
